@@ -61,15 +61,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
-        modifier = modifier
-            .fillMaxSize()
-            .padding(horizontal = 24.dp, vertical = 12.dp)
-    ) {
+        modifier = modifier.fillMaxSize().padding(horizontal = 24.dp, vertical = 12.dp)) {
 
         // company name - sophia & co.
         Text(
             text = message,
-            fontSize = 28.sp,
+            fontSize = 23.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
             textAlign = TextAlign.Center,
@@ -92,9 +89,7 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
     val image = painterResource(R.drawable.business_card)
 
     Box(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(16.dp),
+        modifier = modifier.fillMaxSize().padding(16.dp),
         contentAlignment = Alignment.Center
     ) {
         Surface(
